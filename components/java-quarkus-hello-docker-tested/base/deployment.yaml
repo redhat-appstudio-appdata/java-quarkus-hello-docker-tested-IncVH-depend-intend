@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: java-quarkus-hello-docker-tested
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: java-quarkus-hello-docker-tested
+    app.kubernetes.io/part-of: java-quarkus-hello-docker-tested
+  name: java-quarkus-hello-docker-tested
+spec:
+  replicas: 1
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app: java-quarkus-app
+      app.kubernetes.io/instance: java-quarkus-hello-docker-tested
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: java-quarkus-app
+        app.kubernetes.io/instance: java-quarkus-hello-docker-tested
+    spec:
+      containers:
+      - image: java-quarkus-image:latest
+        name: my-java-quarkus
+        ports:
+        - containerPort: 8081
+          name: http
+          protocol: TCP
+        resources:
+          requests:
+            cpu: 10m
+            memory: 100Mi
+status: {}
