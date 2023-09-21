@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: java-quarkus-hello-docker-tested
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/bsutter-tenant/java-quarkus-hello-docker-tested/java-quarkus-hello-docker-tested@sha256:6c0142376dc02d0e59110b34cccf2c5146ae8d429d8070aacf692db2eab805e9
+      - image: quay.io/redhat-user-workloads/bsutter-tenant/java-quarkus-hello-docker-tested/java-quarkus-hello-docker-tested@sha256:cac53648eef216a74d9c8dc7afd5f447b5f37f93d57ffb87cbe27353b10dc18d
         name: my-java-quarkus
         ports:
         - containerPort: 8081
