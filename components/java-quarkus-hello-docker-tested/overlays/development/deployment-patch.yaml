@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: java-quarkus-hello-docker-tested
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/bsutter-tenant/java-quarkus-hello-docker-tested/java-quarkus-hello-docker-tested@sha256:6c0142376dc02d0e59110b34cccf2c5146ae8d429d8070aacf692db2eab805e9
+        name: my-java-quarkus
+        resources: {}
+status: {}
