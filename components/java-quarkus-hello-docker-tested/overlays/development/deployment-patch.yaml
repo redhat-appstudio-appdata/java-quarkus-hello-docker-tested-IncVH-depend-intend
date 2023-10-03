@@ -11,7 +11,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/bsutter-tenant/java-quarkus-hello-docker-tested/java-quarkus-hello-docker-tested@sha256:7ebed7e97db4cf7c587dc85f5ae628fdd9960ea01e184b58fd237d245b4049ff
+      - image: quay.io/redhat-user-workloads/bsutter-tenant/java-quarkus-hello-docker-tested/java-quarkus-hello-docker-tested@sha256:cac53648eef216a74d9c8dc7afd5f447b5f37f93d57ffb87cbe27353b10dc18d
         name: my-java-quarkus
         resources: {}
 status: {}
